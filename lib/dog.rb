@@ -9,7 +9,9 @@ class Dog
   
   def create_table
     sql = <<-SQL
-    "CREATE TABLE dogs
+    "CREATE TABLE dogs(
+    
+    )
     SQL
   end
   
