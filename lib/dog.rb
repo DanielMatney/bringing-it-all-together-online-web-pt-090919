@@ -61,6 +61,7 @@ class Dog
     else self.create(hash)
       Dog.find_by_id(hash)
     end
+    self
   end
   
   
