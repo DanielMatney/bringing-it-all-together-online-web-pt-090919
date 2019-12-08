@@ -6,6 +6,7 @@ class Dog
     self.id = nil
     hash.each {|key, value| self.send(("#{key}="), value)}
     #self.id ||= nil
+    return self.id
   end
   
   
