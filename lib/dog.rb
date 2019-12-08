@@ -70,7 +70,14 @@ class Dog
     end
   end
   
-  
+  def self.find_by_name(name)
+    sql = <<-SQL
+    SELECT * from dogs
+    WHERE name = ?
+    SQL
+    
+    
+  end
   
   
 end
