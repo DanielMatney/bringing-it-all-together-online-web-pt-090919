@@ -61,7 +61,6 @@ class Dog
       self.find_by_id(hash[:id])
     else self.create(hash)
     end
-    
   end
   
   
