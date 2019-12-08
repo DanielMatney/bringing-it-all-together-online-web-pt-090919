@@ -63,7 +63,7 @@ class Dog
     SQL
     
     dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
-    return dog
+    binding.pry
     if a
       
     else self.create(hash)
