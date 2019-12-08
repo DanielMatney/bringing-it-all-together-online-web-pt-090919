@@ -64,7 +64,7 @@ class Dog
     
     dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
     if dog
-      self.find
+      self.new_from_db(dog)
     else self.create(hash)
     end
   end
