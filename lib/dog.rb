@@ -9,8 +9,8 @@ class Dog
   
   def create_table
     sql = <<-SQL
-    "CREATE TABLE dogs(
-    
+    "CREATE TABLE IF NOT EXISTS dogs(
+    id 
     )
     SQL
   end
