@@ -57,8 +57,9 @@ class Dog
   end
   
   def self.find_or_create_by(hash)
-    if hash[:id]
-      self.find_by_id(hash[:id])
+    sql = <<-SQL
+    SELECT * FROM dogs WHERE 
+    SQL
     else self.create(hash)
     end
   end
