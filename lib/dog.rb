@@ -76,7 +76,7 @@ class Dog
     WHERE name = ?
     SQL
     
-    dog = DB[:conn].execute(sql, hash[:name])[0]
+    dog = DB[:conn].execute(sql, name)[0]
     self.new_from_db(dog)
   end
   
