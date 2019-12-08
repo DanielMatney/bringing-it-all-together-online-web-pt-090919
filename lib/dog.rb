@@ -52,7 +52,8 @@ class Dog
   end
   
   def self.find_by_id(id)
-    
+    dog = db.execute("SELECT * FROM dogs WHERE id = ?", id)
+    new_dog = Dog.new(id: pokemon[0][0],name: pokemon[0][1],type: pokemon[0][2],db: db)
   end
   
   
