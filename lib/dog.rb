@@ -58,7 +58,7 @@ class Dog
   
   def self.find_or_create_by(hash)
     sql = <<-SQL
-    SELECT * FROM dogs WHERE 
+    SELECT * FROM dogs WHERE name = 
     SQL
     else self.create(hash)
     end
