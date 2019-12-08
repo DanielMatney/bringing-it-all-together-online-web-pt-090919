@@ -62,7 +62,7 @@ class Dog
     WHERE name = ? AND breed = ?
     SQL
     
-    dog = DB[:conn].execute(sql, hash[:name], hash[:breed])[0]
+    dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
     if dog.id
       dog
     else self.create(hash)
