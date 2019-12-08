@@ -63,8 +63,9 @@ class Dog
     SQL
     
     dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
-    if dog.id
-      dog
+    return dog
+    if 
+      
     else self.create(hash)
     end
   end
