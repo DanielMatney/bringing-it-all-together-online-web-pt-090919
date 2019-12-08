@@ -76,7 +76,7 @@ class Dog
     WHERE name = ?
     SQL
     
-    dog = DB[:conn].execute(sql, hash[:name], hash[:breed])[0]
+    dog = DB[:conn].execute(sql, hash[:name])[0]
   end
   
   
