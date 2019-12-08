@@ -57,7 +57,7 @@ class Dog
   end
   
   def self.find_or_create_by(hash)
-    if self.id
+    if hash[id:]
     else self.create(hash)
       Dog.find_by_id(hash)
     end
