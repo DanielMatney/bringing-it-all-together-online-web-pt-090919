@@ -64,7 +64,7 @@ class Dog
     
     dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
     return dog
-    if 
+    if a
       
     else self.create(hash)
     end
