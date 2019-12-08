@@ -7,7 +7,7 @@ class Dog
     hash.each {|key, value| self.send(("#{key}="), value)}
   end
   
-  def create_table
+  def self.create_table
     sql = <<-SQL
     "CREATE TABLE IF NOT EXISTS dogs(
     id INTEGER PRIMARY KEY,
